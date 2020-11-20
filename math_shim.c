@@ -1,5 +1,8 @@
 #include "math.h"
 
+double __mth_i_dmod(double f, double g);
+
+
 float __pow_finite(float x, float y)
 {
 	return pow(x,y);
@@ -38,4 +41,9 @@ float __exp_finite(double x)
 float __expf_finite(double x)
 {
 	return exp(x);
+}
+
+double __fmth_i_dmod(double f, double g)
+{
+	return __mth_i_dmod(f, g);
 }
